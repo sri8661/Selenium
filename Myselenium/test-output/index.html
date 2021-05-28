@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Dell\AppData\Local\Temp\testng-eclipse-1987218381\testng-customsuite.xml</span>
+                    <span>C:\Users\Dell\AppData\Local\Temp\testng-eclipse-1082960505\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.learnautomation.testcases.LoginTestCRM" class="method navigator-link" hash-for-method="loginApp">loginApp</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="configurationDemo.TestSeleniumChrome" class="method navigator-link" hash-for-method="TestChrome">TestChrome</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -122,16 +122,19 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.learnautomation.testcases.LoginTestCRM</span>
+              <span class="class-name">configurationDemo.TestSeleniumChrome</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginApp">
-                  </a> <!-- loginApp -->
-                  <span class="method-name">loginApp</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
-	at com.learnautomation.testcases.LoginTestCRM.loginApp(LoginTestCRM.java:17)
+                  <a name="TestChrome">
+                  </a> <!-- TestChrome -->
+                  <span class="method-name">TestChrome</span>
+                  <div class="stack-trace">java.lang.AbstractMethodError: Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method &apos;abstract org.openqa.selenium.remote.service.DriverService createDriverService(java.io.File, int, com.google.common.collect.ImmutableList, com.google.common.collect.ImmutableMap)&apos; of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:360)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:118)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:105)
+	at configurationDemo.TestSeleniumChrome.TestChrome(TestSeleniumChrome.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -169,7 +172,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Dell\AppData\Local\Temp\testng-eclipse-1987218381\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Dell\AppData\Local\Temp\testng-eclipse-1082960505\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -178,7 +181,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.learnautomation.testcases.LoginTestCRM&quot;/&gt;
+      &lt;class name=&quot;configurationDemo.TestSeleniumChrome&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -220,14 +223,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginApp')
-data.setCell(0, 2, 'com.learnautomation.testcases.LoginTestCRM')
-data.setCell(0, 3, 7452);
+data.setCell(0, 1, 'TestChrome')
+data.setCell(0, 2, 'configurationDemo.TestSeleniumChrome')
+data.setCell(0, 3, 82);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 82 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -253,12 +256,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.learnautomation.testcases.LoginTestCRM</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">configurationDemo.TestSeleniumChrome</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">Setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">loginApp</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">TestChrome</span>
+                <span class="method-start">116 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

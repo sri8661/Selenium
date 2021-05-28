@@ -1,0 +1,7 @@
+ChromeDriver=F:\\selenium\\chromedriver.exe
+
+IEDriver=F:\\selenium\\IEDriverServer.exe
+
+URL=http://www.learn.automation.com
+
+ExcelPath=

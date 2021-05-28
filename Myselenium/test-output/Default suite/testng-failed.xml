@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.learnautomation.testcases.LoginTestCRM">
+      <class name="configurationDemo.TestSeleniumChrome">
         <methods>
-          <include name="loginApp"/>
+          <include name="TestChrome"/>
+          <include name="Setup"/>
         </methods>
-      </class> <!-- com.learnautomation.testcases.LoginTestCRM -->
+      </class> <!-- configurationDemo.TestSeleniumChrome -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,19 +2,26 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-24T09:10:16 CDT" name="Default suite" finished-at="2021-05-24T09:10:24 CDT" duration-ms="7488">
+  <suite started-at="2021-05-28T09:50:13 CDT" name="Default suite" finished-at="2021-05-28T09:50:14 CDT" duration-ms="223">
     <groups>
     </groups>
-    <test started-at="2021-05-24T09:10:16 CDT" name="Default test" finished-at="2021-05-24T09:10:24 CDT" duration-ms="7488">
-      <class name="com.learnautomation.testcases.LoginTestCRM">
-        <test-method signature="loginApp()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@130c12b7]" started-at="2021-05-24T09:10:16 CDT" name="loginApp" finished-at="2021-05-24T09:10:24 CDT" duration-ms="7452" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+    <test started-at="2021-05-28T09:50:13 CDT" name="Default test" finished-at="2021-05-28T09:50:14 CDT" duration-ms="223">
+      <class name="configurationDemo.TestSeleniumChrome">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:configurationDemo.TestSeleniumChrome@2e8c1c9b]" started-at="2021-05-28T09:50:13 CDT" name="Setup" finished-at="2021-05-28T09:50:13 CDT" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="TestChrome()[pri:0, instance:configurationDemo.TestSeleniumChrome@2e8c1c9b]" started-at="2021-05-28T09:50:14 CDT" name="TestChrome" finished-at="2021-05-28T09:50:14 CDT" duration-ms="82" status="FAIL">
+          <exception class="java.lang.AbstractMethodError">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null]]>
+              <![CDATA[Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract org.openqa.selenium.remote.service.DriverService createDriverService(java.io.File, int, com.google.common.collect.ImmutableList, com.google.common.collect.ImmutableMap)' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null
-at com.learnautomation.testcases.LoginTestCRM.loginApp(LoginTestCRM.java:17)
+              <![CDATA[java.lang.AbstractMethodError: Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract org.openqa.selenium.remote.service.DriverService createDriverService(java.io.File, int, com.google.common.collect.ImmutableList, com.google.common.collect.ImmutableMap)' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:360)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:118)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+at configurationDemo.TestSeleniumChrome.TestChrome(TestSeleniumChrome.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -45,11 +52,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AbstractMethodError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginApp -->
-      </class> <!-- com.learnautomation.testcases.LoginTestCRM -->
+        </test-method> <!-- TestChrome -->
+      </class> <!-- configurationDemo.TestSeleniumChrome -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
